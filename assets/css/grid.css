@@ -1,0 +1,118 @@
+/*!
+ * Сетка (Grid).
+ *
+ * Расширение "Темы оформления".
+ * Модуль "Маркетплейс".
+ *
+ * Copyright 2015 Вeб-студия GearMagic
+ * Copyright Anton Tivonenko <anton.tivonenko@gmail.com>
+ * https://gearmagic.ru/license/
+ */
+
+/* Заливка заднего фона сетки (см. идент. viewManager) */
+#gm-mp-themes-grid .x-grid-view {
+    background: url("../images/watermark.svg") no-repeat calc(100% - 25px) calc(100% - 20px);
+    background-size: 100px;
+}
+
+
+/**
+ * Ячейки сетки.
+ */
+.gm-mp-themes-grid__cell {
+    position: relative;
+    padding-left: 75px;
+    min-height: 64px;
+}
+.gm-mp-themes-grid__cell.g-cell-lock {
+    opacity: 0.45;
+}
+.gm-mp-themes-grid__cell-icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 64px;
+    height: 64px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 50%;
+}
+.gm-mp-themes-grid__cell-title {
+    font-size: 14px;
+    margin-bottom: 4px;
+}
+.gm-mp-themes-grid__cell-desc {
+    color: #666666;
+    font-size: 12px;
+}
+.gm-mp-themes-grid__cell-ver {
+    color: #666666;
+    font-size: 14px;
+}
+.gm-mp-themes-grid__cell-ver span {
+    color: #4D82B8;
+}
+.gm-mp-themes-grid__td_offset {
+    vertical-align: middle;
+}
+
+
+/**
+ * Статусы установки тем.
+ */
+.gm-mp-themes-status {
+    padding: 5px 5px 5px 5px;
+    border-radius: 2px;
+    min-width: 100px;
+    display: block;
+}
+.gm-mp-themes-status_installed {
+    background-color: #f1f1f1;
+    color: #217346;
+}
+.gm-mp-themes-status_not-installed {
+    background-color: #f1f1f1;
+    color: #4d81b8;
+}
+.gm-mp-themes-status_broken {
+    background-color: #f1f1f1;
+    color: #cd4c32;
+}
+
+
+/**
+ * Панель инструментов сетки.
+ */
+/* Значок "Установить" (Create) */
+.gm-mp-themes__icon-create_large,
+.gm-mp-themes__icon-create_medium,
+.gm-mp-themes__icon-create { background-image: url("../images/icon-create.svg"); }
+.gm-mp-themes__icon-create_small { background-image: url("../images/icon-create_small.svg"); }
+/* Значок "Удалить" (Delete) */
+.gm-mp-themes__icon-delete_large,
+.gm-mp-themes__icon-delete_medium,
+.gm-mp-themes__icon-delete { background-image: url("../images/icon-delete.svg"); }
+.gm-mp-themes__icon-delete_small { background-image: url("../images/icon-delete_small.svg"); }
+/* Значок "Удалить" (Uninstall) */
+.gm-mp-themes__icon-uninstall_large,
+.gm-mp-themes__icon-uninstall_medium,
+.gm-mp-themes__icon-uninstall { background-image: url("../images/icon-uninstall.svg"); }
+.gm-mp-themes__icon-uninstall_small { background-image: url("../images/icon-uninstall_small.svg"); }
+/* Значок "Загрузить" (Upload) */
+.gm-mp-themes__icon-upload_large,
+.gm-mp-themes__icon-upload_medium,
+.gm-mp-themes__icon-upload { background-image: url("../images/icon-upload.svg"); }
+.gm-mp-themes__icon-upload_small { background-image: url("../images/icon-upload_small.svg"); }
+/* Значок "Установить" (Install) */
+.gm-mp-themes__icon-install_large,
+.gm-mp-themes__icon-install_medium,
+.gm-mp-themes__icon-install { background-image: url("../images/icon-install.svg"); }
+.gm-mp-themes__icon-install_small { background-image: url("../images/icon-install_small.svg"); }
+/* Значок "Демонтаж" (Unmount) */
+.gm-mp-themes__icon-unmount_large,
+.gm-mp-themes__icon-unmount_medium,
+.gm-mp-themes__icon-unmount { background-image: url("../images/icon-unmount.svg"); }
+.gm-mp-themes__icon-unmount_small { background-image: url("../images/icon-unmount_small.svg"); }
+/* Значок "Шаблоны" */
+.gm-mp-themes__icon-folders { background-image: url("../images/icon-folders.svg"); }
