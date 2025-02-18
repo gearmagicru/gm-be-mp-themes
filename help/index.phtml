@@ -1,0 +1,28 @@
+<?php
+/**
+ * Страница "Содержание".
+ * 
+ * Локализации по умолчанию.
+ * 
+ * Этот файл является частью модуля веб-приложения GearMagic.
+ * 
+ * @copyright Copyright (c) 2015 Веб-студия GearMagic
+ * @license https://gearmagic.ru/license/
+ */
+?>
+<article>
+    <h1>Themes</h1>
+    <div class="g-help-icon">
+        <img src="<?= $assetsUrl, '/images/icon.svg' ?>" />
+    </div>
+    <p>Themes management.</p>
+
+    <h2>Content:</h2>
+    <ul class="g-help-list">
+        <li><a href="<?= $url('grid') ?>">List of themes</a></li>
+        <li><a href="<?= $url('create') ?>">Theme creation form</a></li>
+        <li><a href="<?= $url('install') ?>">Theme setup form</a></li>
+        <li><a href="<?= $url('package') ?>">Theme information form</a></li>
+        <li><a href="<?= $url('upload') ?>">Theme upload form</a></li>
+    </ul>
+</article>

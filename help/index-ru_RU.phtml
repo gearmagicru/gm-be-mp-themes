@@ -1,0 +1,28 @@
+<?php
+/**
+ * Страница "Содержание".
+ * 
+ * Русская локализации.
+ * 
+ * Этот файл является частью модуля веб-приложения GearMagic.
+ * 
+ * @copyright Copyright (c) 2015 Веб-студия GearMagic
+ * @license https://gearmagic.ru/license/
+ */
+?>
+<article>
+    <h1>Темы оформления</h1>
+    <div class="g-help-icon">
+        <img src="<?= $assetsUrl, '/images/icon.svg' ?>" />
+    </div>
+    <p>Управление визуальным оформлением.</p>
+
+    <h2>Содержание:</h2>
+    <ul class="g-help-list">
+        <li><a href="<?= $url('grid') ?>">Список тем оформлений</a></li>
+        <li><a href="<?= $url('create') ?>">Форма создания темы</a></li>
+        <li><a href="<?= $url('install') ?>">Форма установки темы</a></li>
+        <li><a href="<?= $url('package') ?>">Форма информации о теме</a></li>
+        <li><a href="<?= $url('upload') ?>">Форма загрузки темы</a></li>
+    </ul>
+</article>
